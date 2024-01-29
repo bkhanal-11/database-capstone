@@ -31,7 +31,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `littlelemondb`.`Bookings` (
   `BookingID` INT NOT NULL,
-  `Date` DATE NULL,
+  `BookingDate` DATE NULL,
   `TableNumber` INT NULL,
   `CustomerID` INT NULL,
   PRIMARY KEY (`BookingID`),

@@ -1,7 +1,7 @@
-USE LittleLemonDB;
+USE `littlelemondb`;
 DROP PROCEDURE IF EXISTS CancelOrder;
 
-delimiter \\
+DELIMITER \\
 
 CREATE PROCEDURE CancelOrder(Orderid INT) 
 BEGIN
@@ -9,6 +9,6 @@ DELETE FROM Orders WHERE OrderID=Orderid;
 SELECT concat("Order ", OrderID, " is cancelled") AS Confirmation;
 END\\
 
-delimiter ;
+DELIMITER ;
 
 CALL CancelOrder(5)
