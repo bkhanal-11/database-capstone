@@ -1,2 +1,2 @@
-# Meta's Database Enigineer Capstone
+# Meta's Database Engineer Capstone
 
